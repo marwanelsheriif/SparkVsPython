@@ -1,0 +1,224 @@
+Using properties file: /Users/marwamostsafa/Downloads/spark-3.2.1-bin-hadoop3.2/conf/spark-defaults.conf
+22/04/13 03:59:20 WARN Utils: Your hostname, Marwan-Mostafa-Cairo.local resolves to a loopback address: 127.0.0.1; using 192.168.1.7 instead (on interface en0)
+22/04/13 03:59:20 WARN Utils: Set SPARK_LOCAL_IP if you need to bind to another address
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.apache.spark.unsafe.Platform (file:/Users/marwamostsafa/Downloads/spark-3.2.1-bin-hadoop3.2/jars/spark-unsafe_2.12-3.2.1.jar) to constructor java.nio.DirectByteBuffer(long,int)
+WARNING: Please consider reporting this to the maintainers of org.apache.spark.unsafe.Platform
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+Adding default property: spark.master=spark://127.0.0.1:7077
+Parsed arguments:
+  master                  local[*]
+  deployMode              null
+  executorMemory          null
+  executorCores           null
+  totalExecutorCores      null
+  propertiesFile          /Users/marwamostsafa/Downloads/spark-3.2.1-bin-hadoop3.2/conf/spark-defaults.conf
+  driverMemory            null
+  driverCores             null
+  driverExtraClassPath    null
+  driverExtraLibraryPath  null
+  driverExtraJavaOptions  null
+  supervise               false
+  queue                   null
+  numExecutors            null
+  files                   file:/Users/marwamostsafa/Desktop/run_python_code.sh
+  pyFiles                 file:/Users/marwamostsafa/Desktop/spark_test.py
+  archives                null
+  mainClass               SampleRunner
+  primaryResource         file:/Users/marwamostsafa/test-workspace/SparkSimpleApp/target/SparkSimpleApp-0.0.1-SNAPSHOT.jar
+  name                    SampleRunner
+  childArgs               [3 2500000]
+  jars                    null
+  packages                null
+  packagesExclusions      null
+  repositories            null
+  verbose                 true
+
+Spark properties used, including those specified through
+ --conf and those from the properties file /Users/marwamostsafa/Downloads/spark-3.2.1-bin-hadoop3.2/conf/spark-defaults.conf:
+  (spark.master,spark://127.0.0.1:7077)
+
+    
+22/04/13 03:59:21 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Main class:
+SampleRunner
+Arguments:
+3
+2500000
+Spark config:
+(spark.jars,file:/Users/marwamostsafa/test-workspace/SparkSimpleApp/target/SparkSimpleApp-0.0.1-SNAPSHOT.jar)
+(spark.app.name,SampleRunner)
+(spark.submit.pyFiles,/Users/marwamostsafa/Desktop/spark_test.py)
+(spark.files,file:///Users/marwamostsafa/Desktop/run_python_code.sh,file:///Users/marwamostsafa/Desktop/spark_test.py)
+(spark.submit.deployMode,client)
+(spark.master,local[*])
+Classpath elements:
+file:/Users/marwamostsafa/test-workspace/SparkSimpleApp/target/SparkSimpleApp-0.0.1-SNAPSHOT.jar
+
+
+Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
+22/04/13 03:59:21 INFO SparkContext: Running Spark version 3.2.1
+22/04/13 03:59:21 INFO ResourceUtils: ==============================================================
+22/04/13 03:59:21 INFO ResourceUtils: No custom resources configured for spark.driver.
+22/04/13 03:59:21 INFO ResourceUtils: ==============================================================
+22/04/13 03:59:21 INFO SparkContext: Submitted application: Spark Test
+22/04/13 03:59:21 INFO ResourceProfile: Default ResourceProfile created, executor resources: Map(cores -> name: cores, amount: 1, script: , vendor: , memory -> name: memory, amount: 1024, script: , vendor: , offHeap -> name: offHeap, amount: 0, script: , vendor: ), task resources: Map(cpus -> name: cpus, amount: 1.0)
+22/04/13 03:59:21 INFO ResourceProfile: Limiting resource is cpu
+22/04/13 03:59:21 INFO ResourceProfileManager: Added ResourceProfile id: 0
+22/04/13 03:59:21 INFO SecurityManager: Changing view acls to: marwan-mostafa
+22/04/13 03:59:21 INFO SecurityManager: Changing modify acls to: marwan-mostafa
+22/04/13 03:59:21 INFO SecurityManager: Changing view acls groups to: 
+22/04/13 03:59:21 INFO SecurityManager: Changing modify acls groups to: 
+22/04/13 03:59:21 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(marwan-mostafa); groups with view permissions: Set(); users  with modify permissions: Set(marwan-mostafa); groups with modify permissions: Set()
+22/04/13 03:59:22 INFO Utils: Successfully started service 'sparkDriver' on port 53815.
+22/04/13 03:59:22 INFO SparkEnv: Registering MapOutputTracker
+22/04/13 03:59:22 INFO SparkEnv: Registering BlockManagerMaster
+22/04/13 03:59:22 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+22/04/13 03:59:22 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+22/04/13 03:59:22 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+22/04/13 03:59:22 INFO DiskBlockManager: Created local directory at /private/var/folders/8p/dsygk2ld6519jk4kg533h67m0000gn/T/blockmgr-b92671e4-7c1a-43e0-b413-481e2b5bd9c1
+22/04/13 03:59:22 INFO MemoryStore: MemoryStore started with capacity 434.4 MiB
+22/04/13 03:59:22 INFO SparkEnv: Registering OutputCommitCoordinator
+22/04/13 03:59:22 INFO Utils: Successfully started service 'SparkUI' on port 4040.
+22/04/13 03:59:22 INFO SparkUI: Bound SparkUI to 0.0.0.0, and started at http://127.0.0.1:4040
+22/04/13 03:59:22 INFO SparkContext: Added JAR file:/Users/marwamostsafa/test-workspace/SparkSimpleApp/target/SparkSimpleApp-0.0.1-SNAPSHOT.jar at spark://192.168.1.7:53815/jars/SparkSimpleApp-0.0.1-SNAPSHOT.jar with timestamp 1649815161735
+22/04/13 03:59:22 INFO SparkContext: Added file file:///Users/marwamostsafa/Desktop/run_python_code.sh at file:///Users/marwamostsafa/Desktop/run_python_code.sh with timestamp 1649815161735
+22/04/13 03:59:22 INFO Utils: Copying /Users/marwamostsafa/Desktop/run_python_code.sh to /private/var/folders/8p/dsygk2ld6519jk4kg533h67m0000gn/T/spark-84683a57-cb6a-4111-bcf2-d5bb738deb88/userFiles-ce091cef-9606-44ce-8475-99937fc4c8db/run_python_code.sh
+22/04/13 03:59:22 INFO SparkContext: Added file file:///Users/marwamostsafa/Desktop/spark_test.py at file:///Users/marwamostsafa/Desktop/spark_test.py with timestamp 1649815161735
+22/04/13 03:59:22 INFO Utils: Copying /Users/marwamostsafa/Desktop/spark_test.py to /private/var/folders/8p/dsygk2ld6519jk4kg533h67m0000gn/T/spark-84683a57-cb6a-4111-bcf2-d5bb738deb88/userFiles-ce091cef-9606-44ce-8475-99937fc4c8db/spark_test.py
+22/04/13 03:59:23 INFO Executor: Starting executor ID driver on host 192.168.1.7
+22/04/13 03:59:23 INFO Executor: Fetching file:///Users/marwamostsafa/Desktop/run_python_code.sh with timestamp 1649815161735
+22/04/13 03:59:23 INFO Utils: /Users/marwamostsafa/Desktop/run_python_code.sh has been previously copied to /private/var/folders/8p/dsygk2ld6519jk4kg533h67m0000gn/T/spark-84683a57-cb6a-4111-bcf2-d5bb738deb88/userFiles-ce091cef-9606-44ce-8475-99937fc4c8db/run_python_code.sh
+22/04/13 03:59:23 INFO Executor: Fetching file:///Users/marwamostsafa/Desktop/spark_test.py with timestamp 1649815161735
+22/04/13 03:59:23 INFO Utils: /Users/marwamostsafa/Desktop/spark_test.py has been previously copied to /private/var/folders/8p/dsygk2ld6519jk4kg533h67m0000gn/T/spark-84683a57-cb6a-4111-bcf2-d5bb738deb88/userFiles-ce091cef-9606-44ce-8475-99937fc4c8db/spark_test.py
+22/04/13 03:59:23 INFO Executor: Fetching spark://192.168.1.7:53815/jars/SparkSimpleApp-0.0.1-SNAPSHOT.jar with timestamp 1649815161735
+22/04/13 03:59:23 INFO TransportClientFactory: Successfully created connection to /192.168.1.7:53815 after 28 ms (0 ms spent in bootstraps)
+22/04/13 03:59:23 INFO Utils: Fetching spark://192.168.1.7:53815/jars/SparkSimpleApp-0.0.1-SNAPSHOT.jar to /private/var/folders/8p/dsygk2ld6519jk4kg533h67m0000gn/T/spark-84683a57-cb6a-4111-bcf2-d5bb738deb88/userFiles-ce091cef-9606-44ce-8475-99937fc4c8db/fetchFileTemp9430585840310583747.tmp
+22/04/13 03:59:23 INFO Executor: Adding file:/private/var/folders/8p/dsygk2ld6519jk4kg533h67m0000gn/T/spark-84683a57-cb6a-4111-bcf2-d5bb738deb88/userFiles-ce091cef-9606-44ce-8475-99937fc4c8db/SparkSimpleApp-0.0.1-SNAPSHOT.jar to class loader
+22/04/13 03:59:23 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 53818.
+22/04/13 03:59:23 INFO NettyBlockTransferService: Server created on 192.168.1.7:53818
+22/04/13 03:59:23 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+22/04/13 03:59:23 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 192.168.1.7, 53818, None)
+22/04/13 03:59:23 INFO BlockManagerMasterEndpoint: Registering block manager 192.168.1.7:53818 with 434.4 MiB RAM, BlockManagerId(driver, 192.168.1.7, 53818, None)
+22/04/13 03:59:23 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 192.168.1.7, 53818, None)
+22/04/13 03:59:23 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, 192.168.1.7, 53818, None)
+22/04/13 03:59:24 INFO MemoryStore: Block broadcast_0 stored as values in memory (estimated size 219.7 KiB, free 434.2 MiB)
+22/04/13 03:59:24 INFO MemoryStore: Block broadcast_0_piece0 stored as bytes in memory (estimated size 32.1 KiB, free 434.2 MiB)
+22/04/13 03:59:24 INFO BlockManagerInfo: Added broadcast_0_piece0 in memory on 192.168.1.7:53818 (size: 32.1 KiB, free: 434.4 MiB)
+22/04/13 03:59:24 INFO SparkContext: Created broadcast 0 from textFile at SampleRunner.java:27
+22/04/13 03:59:24 INFO deprecation: mapred.output.dir is deprecated. Instead, use mapreduce.output.fileoutputformat.outputdir
+22/04/13 03:59:24 INFO HadoopMapRedCommitProtocol: Using output committer class org.apache.hadoop.mapred.FileOutputCommitter
+22/04/13 03:59:24 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+22/04/13 03:59:24 INFO FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+22/04/13 03:59:24 INFO FileInputFormat: Total input files to process : 1
+22/04/13 03:59:24 INFO SparkContext: Starting job: runJob at SparkHadoopWriter.scala:83
+22/04/13 03:59:24 INFO DAGScheduler: Got job 0 (runJob at SparkHadoopWriter.scala:83) with 8 output partitions
+22/04/13 03:59:24 INFO DAGScheduler: Final stage: ResultStage 0 (runJob at SparkHadoopWriter.scala:83)
+22/04/13 03:59:24 INFO DAGScheduler: Parents of final stage: List()
+22/04/13 03:59:24 INFO DAGScheduler: Missing parents: List()
+22/04/13 03:59:24 INFO DAGScheduler: Submitting ResultStage 0 (MapPartitionsRDD[3] at saveAsTextFile at SampleRunner.java:39), which has no missing parents
+22/04/13 03:59:24 INFO MemoryStore: Block broadcast_1 stored as values in memory (estimated size 102.3 KiB, free 434.1 MiB)
+22/04/13 03:59:24 INFO MemoryStore: Block broadcast_1_piece0 stored as bytes in memory (estimated size 37.3 KiB, free 434.0 MiB)
+22/04/13 03:59:24 INFO BlockManagerInfo: Added broadcast_1_piece0 in memory on 192.168.1.7:53818 (size: 37.3 KiB, free: 434.3 MiB)
+22/04/13 03:59:24 INFO SparkContext: Created broadcast 1 from broadcast at DAGScheduler.scala:1478
+22/04/13 03:59:24 INFO DAGScheduler: Submitting 8 missing tasks from ResultStage 0 (MapPartitionsRDD[3] at saveAsTextFile at SampleRunner.java:39) (first 15 tasks are for partitions Vector(0, 1, 2, 3, 4, 5, 6, 7))
+22/04/13 03:59:24 INFO TaskSchedulerImpl: Adding task set 0.0 with 8 tasks resource profile 0
+22/04/13 03:59:24 INFO TaskSetManager: Starting task 0.0 in stage 0.0 (TID 0) (192.168.1.7, executor driver, partition 0, PROCESS_LOCAL, 4538 bytes) taskResourceAssignments Map()
+22/04/13 03:59:24 INFO TaskSetManager: Starting task 1.0 in stage 0.0 (TID 1) (192.168.1.7, executor driver, partition 1, PROCESS_LOCAL, 4538 bytes) taskResourceAssignments Map()
+22/04/13 03:59:24 INFO TaskSetManager: Starting task 2.0 in stage 0.0 (TID 2) (192.168.1.7, executor driver, partition 2, PROCESS_LOCAL, 4538 bytes) taskResourceAssignments Map()
+22/04/13 03:59:24 INFO TaskSetManager: Starting task 3.0 in stage 0.0 (TID 3) (192.168.1.7, executor driver, partition 3, PROCESS_LOCAL, 4538 bytes) taskResourceAssignments Map()
+22/04/13 03:59:24 INFO TaskSetManager: Starting task 4.0 in stage 0.0 (TID 4) (192.168.1.7, executor driver, partition 4, PROCESS_LOCAL, 4538 bytes) taskResourceAssignments Map()
+22/04/13 03:59:24 INFO TaskSetManager: Starting task 5.0 in stage 0.0 (TID 5) (192.168.1.7, executor driver, partition 5, PROCESS_LOCAL, 4538 bytes) taskResourceAssignments Map()
+22/04/13 03:59:24 INFO TaskSetManager: Starting task 6.0 in stage 0.0 (TID 6) (192.168.1.7, executor driver, partition 6, PROCESS_LOCAL, 4538 bytes) taskResourceAssignments Map()
+22/04/13 03:59:24 INFO TaskSetManager: Starting task 7.0 in stage 0.0 (TID 7) (192.168.1.7, executor driver, partition 7, PROCESS_LOCAL, 4538 bytes) taskResourceAssignments Map()
+22/04/13 03:59:25 INFO Executor: Running task 2.0 in stage 0.0 (TID 2)
+22/04/13 03:59:25 INFO Executor: Running task 7.0 in stage 0.0 (TID 7)
+22/04/13 03:59:25 INFO Executor: Running task 1.0 in stage 0.0 (TID 1)
+22/04/13 03:59:25 INFO Executor: Running task 3.0 in stage 0.0 (TID 3)
+22/04/13 03:59:25 INFO Executor: Running task 5.0 in stage 0.0 (TID 5)
+22/04/13 03:59:25 INFO Executor: Running task 4.0 in stage 0.0 (TID 4)
+22/04/13 03:59:25 INFO Executor: Running task 0.0 in stage 0.0 (TID 0)
+22/04/13 03:59:25 INFO Executor: Running task 6.0 in stage 0.0 (TID 6)
+22/04/13 03:59:25 INFO HadoopRDD: Input split: file:/Users/marwamostsafa/test-workspace/SparkSimpleApp/String250.txt:67108864+33554432
+22/04/13 03:59:25 INFO HadoopRDD: Input split: file:/Users/marwamostsafa/test-workspace/SparkSimpleApp/String250.txt:134217728+33554432
+22/04/13 03:59:25 INFO HadoopRDD: Input split: file:/Users/marwamostsafa/test-workspace/SparkSimpleApp/String250.txt:0+33554432
+22/04/13 03:59:25 INFO HadoopRDD: Input split: file:/Users/marwamostsafa/test-workspace/SparkSimpleApp/String250.txt:167772160+33554432
+22/04/13 03:59:25 INFO HadoopRDD: Input split: file:/Users/marwamostsafa/test-workspace/SparkSimpleApp/String250.txt:201326592+33554432
+22/04/13 03:59:25 INFO HadoopRDD: Input split: file:/Users/marwamostsafa/test-workspace/SparkSimpleApp/String250.txt:234881024+27263001
+22/04/13 03:59:25 INFO HadoopRDD: Input split: file:/Users/marwamostsafa/test-workspace/SparkSimpleApp/String250.txt:33554432+33554432
+22/04/13 03:59:25 INFO HadoopRDD: Input split: file:/Users/marwamostsafa/test-workspace/SparkSimpleApp/String250.txt:100663296+33554432
+22/04/13 03:59:25 INFO HadoopMapRedCommitProtocol: Using output committer class org.apache.hadoop.mapred.FileOutputCommitter
+22/04/13 03:59:25 INFO HadoopMapRedCommitProtocol: Using output committer class org.apache.hadoop.mapred.FileOutputCommitter
+22/04/13 03:59:25 INFO HadoopMapRedCommitProtocol: Using output committer class org.apache.hadoop.mapred.FileOutputCommitter
+22/04/13 03:59:25 INFO HadoopMapRedCommitProtocol: Using output committer class org.apache.hadoop.mapred.FileOutputCommitter
+22/04/13 03:59:25 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+22/04/13 03:59:25 INFO FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+22/04/13 03:59:25 INFO HadoopMapRedCommitProtocol: Using output committer class org.apache.hadoop.mapred.FileOutputCommitter
+22/04/13 03:59:25 INFO HadoopMapRedCommitProtocol: Using output committer class org.apache.hadoop.mapred.FileOutputCommitter
+22/04/13 03:59:25 INFO HadoopMapRedCommitProtocol: Using output committer class org.apache.hadoop.mapred.FileOutputCommitter
+22/04/13 03:59:25 INFO HadoopMapRedCommitProtocol: Using output committer class org.apache.hadoop.mapred.FileOutputCommitter
+22/04/13 03:59:25 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+22/04/13 03:59:25 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+22/04/13 03:59:25 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+22/04/13 03:59:25 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+22/04/13 03:59:25 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+22/04/13 03:59:25 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+22/04/13 03:59:25 INFO FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+22/04/13 03:59:25 INFO FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+22/04/13 03:59:25 INFO FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+22/04/13 03:59:25 INFO FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+22/04/13 03:59:25 INFO FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+22/04/13 03:59:25 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+22/04/13 03:59:25 INFO FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+22/04/13 03:59:25 INFO FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+22/04/13 03:59:26 INFO FileOutputCommitter: Saved output of task 'attempt_202204130359245543491705308003232_0003_m_000000_0' to file:/Users/marwamostsafa/test-workspace/SparkSimpleApp/temp49/_temporary/0/task_202204130359245543491705308003232_0003_m_000000
+22/04/13 03:59:26 INFO SparkHadoopMapRedUtil: attempt_202204130359245543491705308003232_0003_m_000000_0: Committed
+22/04/13 03:59:26 INFO Executor: Finished task 0.0 in stage 0.0 (TID 0). 1330 bytes result sent to driver
+22/04/13 03:59:26 INFO TaskSetManager: Finished task 0.0 in stage 0.0 (TID 0) in 1548 ms on 192.168.1.7 (executor driver) (1/8)
+22/04/13 03:59:45 INFO FileOutputCommitter: Saved output of task 'attempt_202204130359245543491705308003232_0003_m_000007_0' to file:/Users/marwamostsafa/test-workspace/SparkSimpleApp/temp49/_temporary/0/task_202204130359245543491705308003232_0003_m_000007
+22/04/13 03:59:45 INFO SparkHadoopMapRedUtil: attempt_202204130359245543491705308003232_0003_m_000007_0: Committed
+22/04/13 03:59:45 INFO Executor: Finished task 7.0 in stage 0.0 (TID 7). 1287 bytes result sent to driver
+22/04/13 03:59:45 INFO TaskSetManager: Finished task 7.0 in stage 0.0 (TID 7) in 20102 ms on 192.168.1.7 (executor driver) (2/8)
+22/04/13 03:59:45 INFO FileOutputCommitter: Saved output of task 'attempt_202204130359245543491705308003232_0003_m_000004_0' to file:/Users/marwamostsafa/test-workspace/SparkSimpleApp/temp49/_temporary/0/task_202204130359245543491705308003232_0003_m_000004
+22/04/13 03:59:45 INFO SparkHadoopMapRedUtil: attempt_202204130359245543491705308003232_0003_m_000004_0: Committed
+22/04/13 03:59:45 INFO Executor: Finished task 4.0 in stage 0.0 (TID 4). 1287 bytes result sent to driver
+22/04/13 03:59:45 INFO TaskSetManager: Finished task 4.0 in stage 0.0 (TID 4) in 20119 ms on 192.168.1.7 (executor driver) (3/8)
+22/04/13 03:59:45 INFO FileOutputCommitter: Saved output of task 'attempt_202204130359245543491705308003232_0003_m_000001_0' to file:/Users/marwamostsafa/test-workspace/SparkSimpleApp/temp49/_temporary/0/task_202204130359245543491705308003232_0003_m_000001
+22/04/13 03:59:45 INFO SparkHadoopMapRedUtil: attempt_202204130359245543491705308003232_0003_m_000001_0: Committed
+22/04/13 03:59:45 INFO Executor: Finished task 1.0 in stage 0.0 (TID 1). 1287 bytes result sent to driver
+22/04/13 03:59:45 INFO TaskSetManager: Finished task 1.0 in stage 0.0 (TID 1) in 20276 ms on 192.168.1.7 (executor driver) (4/8)
+22/04/13 03:59:45 INFO FileOutputCommitter: Saved output of task 'attempt_202204130359245543491705308003232_0003_m_000006_0' to file:/Users/marwamostsafa/test-workspace/SparkSimpleApp/temp49/_temporary/0/task_202204130359245543491705308003232_0003_m_000006
+22/04/13 03:59:45 INFO SparkHadoopMapRedUtil: attempt_202204130359245543491705308003232_0003_m_000006_0: Committed
+22/04/13 03:59:45 INFO Executor: Finished task 6.0 in stage 0.0 (TID 6). 1287 bytes result sent to driver
+22/04/13 03:59:45 INFO TaskSetManager: Finished task 6.0 in stage 0.0 (TID 6) in 20349 ms on 192.168.1.7 (executor driver) (5/8)
+22/04/13 03:59:45 INFO FileOutputCommitter: Saved output of task 'attempt_202204130359245543491705308003232_0003_m_000002_0' to file:/Users/marwamostsafa/test-workspace/SparkSimpleApp/temp49/_temporary/0/task_202204130359245543491705308003232_0003_m_000002
+22/04/13 03:59:45 INFO SparkHadoopMapRedUtil: attempt_202204130359245543491705308003232_0003_m_000002_0: Committed
+22/04/13 03:59:45 INFO FileOutputCommitter: Saved output of task 'attempt_202204130359245543491705308003232_0003_m_000003_0' to file:/Users/marwamostsafa/test-workspace/SparkSimpleApp/temp49/_temporary/0/task_202204130359245543491705308003232_0003_m_000003
+22/04/13 03:59:45 INFO SparkHadoopMapRedUtil: attempt_202204130359245543491705308003232_0003_m_000003_0: Committed
+22/04/13 03:59:45 INFO Executor: Finished task 3.0 in stage 0.0 (TID 3). 1244 bytes result sent to driver
+22/04/13 03:59:45 INFO TaskSetManager: Finished task 3.0 in stage 0.0 (TID 3) in 20435 ms on 192.168.1.7 (executor driver) (6/8)
+22/04/13 03:59:45 INFO Executor: Finished task 2.0 in stage 0.0 (TID 2). 1244 bytes result sent to driver
+22/04/13 03:59:45 INFO TaskSetManager: Finished task 2.0 in stage 0.0 (TID 2) in 20444 ms on 192.168.1.7 (executor driver) (7/8)
+22/04/13 03:59:45 INFO FileOutputCommitter: Saved output of task 'attempt_202204130359245543491705308003232_0003_m_000005_0' to file:/Users/marwamostsafa/test-workspace/SparkSimpleApp/temp49/_temporary/0/task_202204130359245543491705308003232_0003_m_000005
+22/04/13 03:59:45 INFO SparkHadoopMapRedUtil: attempt_202204130359245543491705308003232_0003_m_000005_0: Committed
+22/04/13 03:59:45 INFO Executor: Finished task 5.0 in stage 0.0 (TID 5). 1244 bytes result sent to driver
+22/04/13 03:59:45 INFO TaskSetManager: Finished task 5.0 in stage 0.0 (TID 5) in 20562 ms on 192.168.1.7 (executor driver) (8/8)
+22/04/13 03:59:45 INFO TaskSchedulerImpl: Removed TaskSet 0.0, whose tasks have all completed, from pool 
+22/04/13 03:59:45 INFO DAGScheduler: ResultStage 0 (runJob at SparkHadoopWriter.scala:83) finished in 20.770 s
+22/04/13 03:59:45 INFO DAGScheduler: Job 0 is finished. Cancelling potential speculative or zombie tasks for this job
+22/04/13 03:59:45 INFO TaskSchedulerImpl: Killing all running tasks in stage 0: Stage finished
+22/04/13 03:59:45 INFO DAGScheduler: Job 0 finished: runJob at SparkHadoopWriter.scala:83, took 20.821317 s
+22/04/13 03:59:45 INFO SparkHadoopWriter: Start to commit write Job job_202204130359245543491705308003232_0003.
+22/04/13 03:59:45 INFO SparkHadoopWriter: Write Job job_202204130359245543491705308003232_0003 committed. Elapsed time: 92 ms.
+22/04/13 03:59:45 INFO SparkContext: Invoking stop() from shutdown hook
+22/04/13 03:59:45 INFO SparkUI: Stopped Spark web UI at http://127.0.0.1:4040
+22/04/13 03:59:45 INFO MapOutputTrackerMasterEndpoint: MapOutputTrackerMasterEndpoint stopped!
+22/04/13 03:59:45 INFO MemoryStore: MemoryStore cleared
+22/04/13 03:59:45 INFO BlockManager: BlockManager stopped
+22/04/13 03:59:45 INFO BlockManagerMaster: BlockManagerMaster stopped
+22/04/13 03:59:45 INFO OutputCommitCoordinator$OutputCommitCoordinatorEndpoint: OutputCommitCoordinator stopped!
+22/04/13 03:59:45 INFO SparkContext: Successfully stopped SparkContext
+22/04/13 03:59:45 INFO ShutdownHookManager: Shutdown hook called
+22/04/13 03:59:45 INFO ShutdownHookManager: Deleting directory /private/var/folders/8p/dsygk2ld6519jk4kg533h67m0000gn/T/spark-aca2a75f-26ed-40e1-8194-fcae4eeaa75c
+22/04/13 03:59:45 INFO ShutdownHookManager: Deleting directory /private/var/folders/8p/dsygk2ld6519jk4kg533h67m0000gn/T/spark-84683a57-cb6a-4111-bcf2-d5bb738deb88
