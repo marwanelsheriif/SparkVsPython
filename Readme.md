@@ -25,5 +25,6 @@ You should create a jar file from SampleRunner and add it as app resource in Lau
 	 - It acts as a wrapper for the user-uploaded code
 	 - It creates a sub-process to run user's code
 ## Results
+Note: results are in milliseconds
 
-![alt text](Isolated.png "Title")
+![alt text](https://github.com/marwanelsheriif/SparkVsPython/blob/master/results.png?raw=true)
